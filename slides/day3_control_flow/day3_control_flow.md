@@ -29,7 +29,7 @@ Conditionals:
 
 "Boolean Operators"
 -------------------
-Let's take a short trip back to the land of Hight School Mathematics:
+Let's take a short trip back to the land of _High School Mathematics_:
 
     <  » Less than;
     <= » Less or equal than;
@@ -91,17 +91,14 @@ else:
     print "Our sequence is neither a start nor a stop codon."
 ```
 
-<!--Running this code will yield:
-
-<font color="blue">We have a start codon!</font> -->
-
 - Try changing the value of _sequence_ and see the different results.
+
 Likewise, we can use other boolean operators:
 
 ```python
 sequence = "ATG"
 if len(sequence) == 3:
-    print "This is a codon."
+    print "This can be a codon."
 elif len(sequence) > 3:
     print "This is too long for a codon."
 else:
@@ -151,7 +148,7 @@ for numbers in range(4):
     print(numbers)
 ```
 
-- Running this code will print the numbers from 0 to 5 (remeber python starts to count from 0), each followed by a newline character.
+- Running this code will print the numbers from 0 to 3 (remeber python starts to count from 0), each followed by a newline character.
 
 - Also make note of the [range()](http://docs.python.org/library/functions.html#range "range\(\) function documentation")  function. It is used in this case to create a list of integers from 0 to 5 on the fly. It is a very versatile function, you can read more about it in the documentation.
 
@@ -217,7 +214,7 @@ Let's look at another real code example:
 
 ```python
 number=0
-while number <= 0:
+while number <= 3:
     print number
     number += 1
 ```
@@ -262,6 +259,8 @@ What this means - "While the variable ORF does __not__ end with any of the conte
 What this means - "__Add__ a random character from _bases_ to ORF."
 
 Here is the documentation for the used functions: [endswith()](http://docs.python.org/library/stdtypes.html#str.endswith "endswith\(\) documentation"), [random.choice()](http://docs.python.org/library/random.html#random.choice "random.choice\(\) documentation").
+
+Can you see something wrong with this?
 
 ---
 
@@ -381,6 +380,7 @@ for lines in datalist:
         fst = values[2]
         fsts.append(fst)
 print(fsts)
+['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517'] #forceoutput
 ```
 
 Take special care with:
@@ -389,6 +389,7 @@ Take special care with:
 - The [splitlines()](docs.python.org/library/stdtypes.html#str.endswith "splitlines\(\) type documentation") type; this built-in will split a string into a list where each element is a line of the string;
 - The [startswith()](http://docs.python.org/library/stdtypes.html#str.startswith "startswith\(\) function documentation") function; it is pretty much self explanatory;
 - The [split()](http://docs.python.org/library/stdtypes.html#str.split "split\(\) function documentation") function; it will split a string into a list of words eliminating the separator.
+- You have to test this in IDLE or equivalent.
 
 ---
 
