@@ -24,7 +24,7 @@ What are modules?
 =================
 
 ```python
-\# Contents of module teste.py
+\# Contents of module test.py
 sequence_list = ["AGCTG","AGCTG","AGCTG"]
 
 species_dictionary = {"Hs":"Homo_sapiens","Mm":"Mus_musculus"}
@@ -77,12 +77,18 @@ Using the contents of a module:
 Writing a module
 ================
 
-TODO
+In order to write a module, you just have to write a scrpit that can be as simple as declaring some varables.
 
+Afterwards, just import it into your *main* program and they will be ready for use.
 
+It is a good practice, however to add the following if statement to your code:
+
+```python
 if __name__ == "__main__":
     «Program»
+```
 
+This will ensure that any code inside the conditional will **only** be run if the script is being run as a standalone program. 
 
 ---
 
@@ -182,7 +188,10 @@ import re
 test = "Python rules."
 start = re.search("^.* ", test, flags=0)
 print(start)
+Python#forceoutput
 ```
+
+You must test this code in IDLE or equivalent.
 
 ---
 
