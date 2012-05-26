@@ -1,6 +1,6 @@
 Modules
 =======
-Python team
+Python 101 Team
 
 ---
 
@@ -13,10 +13,10 @@ Today we will be speaking about python modules:
 - How do they work?
 - Writing a module
 - Some of the most popular/usefull modules
-	- The ***sys*** (system) module
-	- The ***re*** (regular expressions) module
-	- The ***os*** (operating system) module
-	- The ***Bio*** (BioPython) module
+    - The ***sys*** (system) module
+    - The ***re*** (regular expressions) module
+    - The ***os*** (operating system) module
+    - The ***Bio*** (BioPython) module
 
 ---
 
@@ -30,16 +30,14 @@ sequence_list = ["AGCTG","AGCTG","AGCTG"]
 species_dictionary = {"Hs":"Homo_sapiens","Mm":"Mus_musculus"}
 
 def print_function (print_this):
-	print print_this
+    print print_this
 ```
 
-<ul>
-<li> A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended.
+* A module is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended.
 
-<li> A module can contain statements as well as function definitions.
+* A module can contain statements as well as function definitions.
 
-<li> Python has several _default_ modules, which are present in any complete python install, such as ***re***, ***sys*** or ***os***. Consult [here](http://docs.python.org/modindex.html) for a complete index
-</ul>
+* Python has several _default_ modules, which are present in any complete python install, such as ***re***, ***sys*** or ***os***. Consult [here](http://docs.python.org/modindex.html) for a complete index
 
 ---
 
@@ -49,9 +47,8 @@ How do modules work?
 Importing modules:
 ------------------
 
-<ul>
-<li> In order to use the contents of a specific module, you must use the [import](http://docs.python.org/reference/simple_stmts.html#import "import\(\) documentation") command. </li>
-</ul>
+* In order to use the contents of a specific module, you must use the [import](http://docs.python.org/reference/simple_stmts.html#import "import\(\) documentation") command.
+
 
     import «module»
     import «module» as «other_name»
@@ -62,31 +59,27 @@ Importing modules:
 Using the contents of a module:
 -------------------------------
 
-<ul>
-<li> After importing a module, we can use it's contents in different ways depending on how the module was imported: </li>
-</ul>
+* After importing a module, we can use it's contents in different ways depending on how the module was imported:
 
-	import sys
-	print(sys.argv[0])
-	---
-	from sys import argv
-	print(argv[0])
+    import sys
+    print(sys.argv[0])
+    ---
+    from sys import argv
+    print(argv[0])
 
 ---
 
 Writing a module
 ================
 
-In order to write a module, you just have to write a scrpit that can be as simple as declaring some varables.
+In order to write a module, you just have to write a script that can be as simple as declaring some varables.
 
 Afterwards, just import it into your *main* program and they will be ready for use.
 
 It is a good practice, however to add the following if statement to your code:
 
-```python
-if __name__ == "__main__":
-    «Program»
-```
+    if __name__ == "__main__":
+        «Program»
 
 This will ensure that any code inside the conditional will **only** be run if the script is being run as a standalone program. 
 
@@ -98,20 +91,18 @@ The _sys_ module
 The [sys.argv](http://docs.python.org/library/sys.html#sys.argv "sys.argv documentation") function:
 ---------
 
-<ul>
-<li> Among many other advanced features, _sys_ contains a very useful method: ***argv***. This method allows aditional arguments to be passed and used when invoking the script:</li>
-</ul>
+* Among many other advanced features, _sys_ contains a very useful method: ***argv***. This method allows aditional arguments to be passed and used when invoking the script:
 
-	~$ python my_script.py first_argument second_argument third_argument
+    ``~$ python my_script.py first_argument second_argument third_argument``
 
-<ul>
-<li> After the module has been imported to in the script, the aditional arguments are stored in a list, which can be accessed in a simple way: </li>
-</ul>
+* After the module has been imported to in the script, the aditional arguments are stored in a list, which can be accessed in a simple way:
 
 ```python
 import sys
 print str(sys.argv) # Note that the first argument in the list is the name of the script
-"["my_scripts.py","first_argument","second_argument","third_argument"]" #forceoutput
+"["my_scripts.py","first_argument","second_argument","third_argument"]"
+
+ola #forceoutput
 ```
 
 ---
@@ -119,7 +110,7 @@ print str(sys.argv) # Note that the first argument in the list is the name of th
 The _re_ module
 ===============
 
-![Regular Expressions](https://dl.dropbox.com/s/xpz8erms5v8776q/regular_expressions.png?dl=1)
+![Regular Expressions](https://github.com/bmpvieira/python101/raw/master/slides/day5_modules_and_diy/assets/regular_expressions.png)
 
 ---
 
@@ -179,7 +170,7 @@ We will use re.search() as an example.
 
 This function will look for an expression in a string and is invoked like this:
 
-re.search(pattern, string, flags=0)
+    re.search(pattern, string, flags=0)
 
 [re.search](http://docs.python.org/library/re.html#re.search) will search a given string for a given pattern, and return it. If the pattern is not found, it returns *None*: 
 
@@ -188,9 +179,8 @@ import re
 test = "Python rules."
 start = re.search("^.* ", test, flags=0)
 print(start)
-Python#forceoutput
+Python #forceoutput
 ```
-
 You must test this code in IDLE or equivalent.
 
 ---
@@ -261,7 +251,6 @@ mutable_sequence
 MutableSeq('TTTTTTTTTTTTGTGCTAG', IUPACUnambiguousDNA()) #forceoutput
 ```
 
-
 ---
 
 The BioPython (*Bio*) module
@@ -272,10 +261,10 @@ Whetting Your Appetite
 
 - The **SeqRecord** class allows identifiers and features to be associated with a sequence, creating sequence records much more richer in information:
 
-	- **seq**: The sequence itself
-	- **id**: A unique sequence identifier. Typically an accession number.
-	- **name**: A "common" name/id for the sequence as a string. 
-	- **annotations**: A dictionary with additional information about the sequence
+    - **seq**: The sequence itself
+    - **id**: A unique sequence identifier. Typically an accession number.
+    - **name**: A "common" name/id for the sequence as a string. 
+    - **annotations**: A dictionary with additional information about the sequence
 
  These features can be created manually, or imported directly from a database record (GenBank).
 
@@ -327,7 +316,6 @@ print seq_record.description
  #forceoutput
 ```
 
-
 ---
 
 The BioPython (*Bio*) module
@@ -355,4 +343,4 @@ SeqIO.write(Records,output_fasta,"fasta")
  #forceoutput
 ```
 
----	
+--- 
