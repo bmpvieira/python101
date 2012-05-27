@@ -350,14 +350,14 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Functions (Day 4)
+## Functions (Day 4)
 
 - Blocks of code that perform specific tasks (procedures) repeatedly
 - How to create new functions
 - Using arguments to bring flexibility to those procedures
 
 
-# Input/Output (Day 4)
+## Input/Output (Day 4)
 
 - The three input/output channels: standard input, standard output and standard error
 - Handling input files (opening and parsing) and output files (writing)
@@ -368,7 +368,7 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Modules (Day 5)
+## Modules (Day 5)
 
 - What are modules, how do they work and how to use them
 - Overview of some of the most useful modules:

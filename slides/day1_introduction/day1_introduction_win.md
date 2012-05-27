@@ -78,13 +78,13 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Data structures (Day 2)
+## Data structures (Day 2)
 
 - Basic operators  ("+","-","/","\*")
 - Variable assignment 
 - Standard data structures (Strings, numbers, lists and dictionary)
 
-# Control flow (Day 3)
+## Control flow (Day 3)
 
 - Control flow is used in Python whenever you want to:
 	- **Make choices**, using *conditional statements* when conditions are met
@@ -94,14 +94,14 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Functions (Day 4)
+## Functions (Day 4)
 
 - Blocks of code that perform specific tasks (procedures) repeatedly
 - How to create new functions
 - Using arguments to bring flexibility to those procedures
 
 
-# Input/Output (Day 4)
+## Input/Output (Day 4)
 
 - The three input/output channels: standard input, standard output and standard error
 - Handling input files (opening and parsing) and output files (writing)
