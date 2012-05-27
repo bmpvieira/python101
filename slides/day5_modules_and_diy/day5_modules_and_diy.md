@@ -93,7 +93,8 @@ The [sys.argv](http://docs.python.org/library/sys.html#sys.argv "sys.argv docume
 
 * Among many other advanced features, _sys_ contains a very useful method: ***argv***. This method allows aditional arguments to be passed and used when invoking the script:
 
-    ``~$ python my_script.py first_argument second_argument third_argument``
+<pre><code>~$ python my_script.py first_argument second_argument third_argument</code></pre>
+
 
 * After the module has been imported to in the script, the aditional arguments are stored in a list, which can be accessed in a simple way:
 
@@ -102,7 +103,7 @@ import sys
 print str(sys.argv) # Note that the first argument in the list is the name of the script
 "["my_scripts.py","first_argument","second_argument","third_argument"]"
 
-ola #forceoutput
+ #forceoutput
 ```
 
 ---
