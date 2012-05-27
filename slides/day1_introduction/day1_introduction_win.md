@@ -46,7 +46,7 @@ Python is an **interpreted**, **object-oriented**, **high-level** programming la
 ## Script mode
 
 - Used to construct most Python programs following this simple procedure:
-	- Create and edit a text file with Python code using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)).
+	- Create and edit a text file with Python code using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/))
 	- Save the file with the filename extension ".py"
 	- Run the script with the Python interpreter
 

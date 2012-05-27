@@ -23,7 +23,7 @@ Python 101 team
 
 # The UNIX shell
 
-- The UNIX shell acts as an interface between the **user** and the **kernel**, which is the hub of the operating system. 
+- The UNIX shell acts as an interface between the **user** and the **kernel**, which is the hub of the operating system
 
 ![unix shell](https://dl.dropbox.com/s/uf42mqt2ts99ncf/unix_shell.png?dl=1)
 
