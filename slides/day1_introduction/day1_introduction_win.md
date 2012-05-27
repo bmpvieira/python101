@@ -46,7 +46,7 @@ Python is an **interpreted**, **object-oriented**, **high-level** programming la
 ## Script mode
 
 - Used to construct most Python programs following this simple procedure:
-	- Create and edit a text file with Python code using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)).
+	- Create and edit a text file with Python code using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/))
 	- Save the file with the filename extension ".py"
 	- Run the script with the Python interpreter
 
@@ -73,6 +73,53 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 - **Double clicking**:
 	- Run your script simply by double-cliking it. However, this mode will only be useful when the user input is collected using the prompt feature of the **input()** and **raw_input** functions, that will be covered in the 4th Day
+
+---
+
+# Introducing Python programming
+
+# Data structures (Day 2)
+
+- Basic operators  ("+","-","/","\*")
+- Variable assignment 
+- Standard data structures (Strings, numbers, lists and dictionary)
+
+# Control flow (Day 3)
+
+- Control flow is used in Python whenever you want to:
+	- **Make choices**, using *conditional statements* when conditions are met
+	- **Perform repeated actions**, using a set of statements executed *n* times in a *loop* until a condition is met
+
+---
+
+# Introducing Python programming
+
+# Functions (Day 4)
+
+- Blocks of code that perform specific tasks (procedures) repeatedly
+- How to create new functions
+- Using arguments to bring flexibility to those procedures
+
+
+# Input/Output (Day 4)
+
+- The three input/output channels: standard input, standard output and standard error
+- Handling input files (opening and parsing) and output files (writing)
+- Interactive scripts that request user input
+- Printing messages to the terminal
+
+---
+
+# Introducing Python programming
+
+# Modules (Day 5)
+
+- What are modules, how do they work and how to use them
+- Overview of some of the most useful modules:
+	- *re*, regular expressions
+	- *sys*, system tools
+	- *os*, operative system tools and commands
+	- *biopython*, the bioinformatic's module of choice
 
 ---
 

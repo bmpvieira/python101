@@ -23,7 +23,7 @@ Python 101 team
 
 # The UNIX shell
 
-- The UNIX shell acts as an interface between the **user** and the **kernel**, which is the hub of the operating system. 
+- The UNIX shell acts as an interface between the **user** and the **kernel**, which is the hub of the operating system
 
 ![unix shell](https://dl.dropbox.com/s/uf42mqt2ts99ncf/unix_shell.png?dl=1)
 
@@ -329,6 +329,54 @@ Writing scripts will make the majority of your coding experience. A python scrip
 	1. Run the script by typing "./my_script.py" in the terminal prompt.
 - **Script argument way**:
 	1. Run your python interpreter with the script as an argument (e.g. python my_script.py)
+
+---
+
+# Introducing Python programming
+
+# Data structures (Day 2)
+
+- Basic operators  ("+","-","/","\*")
+- Variable assignment 
+- Standard data structures (Strings, numbers, lists and dictionary)
+
+# Control flow (Day 3)
+
+- Control flow is used in Python whenever you want to:
+	- **Make choices**, using *conditional statements* when conditions are met
+	- **Perform repeated actions**, using a set of statements executed *n* times in a *loop* until a condition is met
+
+---
+
+# Introducing Python programming
+
+# Functions (Day 4)
+
+- Blocks of code that perform specific tasks (procedures) repeatedly
+- How to create new functions
+- Using arguments to bring flexibility to those procedures
+
+
+# Input/Output (Day 4)
+
+- The three input/output channels: standard input, standard output and standard error
+- Handling input files (opening and parsing) and output files (writing)
+- Interactive scripts that request user input
+- Printing messages to the terminal
+
+---
+
+# Introducing Python programming
+
+# Modules (Day 5)
+
+- What are modules, how do they work and how to use them
+- Overview of some of the most useful modules:
+	- *re*, regular expressions
+	- *sys*, system tools
+	- *os*, operative system tools and commands
+	- *biopython*, the bioinformatic's module of choice
+
 
 ---
 
