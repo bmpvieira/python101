@@ -114,6 +114,32 @@ print a == 1
 print a == 2
 ```
 
+Variables usefullness
+=====================
+
+```python
+print "Interesting genes number: "
+print 15
+print "Uninteresting genes number"
+print 30
+print "Total genes: "
+print 15 + 30
+```
+
+Variables usefullness
+=====================
+
+```python
+int_genes = 15
+unint_gene = 30
+print "Interesting genes number: "
+print igenes
+print "Uninteresting genes number"
+print ugenes
+print "Total genes: "
+print igenes + ugenes
+```
+
 Assignment operators
 ====================
 
