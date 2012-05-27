@@ -112,7 +112,7 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Modules (Day 5)
+## Modules (Day 5)
 
 - What are modules, how do they work and how to use them
 - Overview of some of the most useful modules:
