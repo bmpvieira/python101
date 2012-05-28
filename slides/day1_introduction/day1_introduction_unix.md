@@ -331,13 +331,13 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Introducing Python programming
 
-# Data structures (Day 2)
+## Data structures (Day 2)
 
 - Basic operators  ("+","-","/","\*")
 - Variable assignment 
 - Standard data structures (Strings, numbers, lists and dictionary)
 
-# Control flow (Day 3)
+## Control flow (Day 3)
 
 - Control flow is used in Python whenever you want to:
 	- **Make choices**, using *conditional statements* when conditions are met
