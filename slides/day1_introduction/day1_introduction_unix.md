@@ -382,7 +382,7 @@ Writing scripts will make the majority of your coding experience. A python scrip
 Some of the most usefull resources that will help you solving problems and getting new ideas during your coding sessions:
 
 - [Official Python tutorial](http://docs.python.org/tutorial/): From the official Python documentation, this resource covers all basic and advance built-in features of Python.
-- [Python wiki](http://wiki.python.org/moin/): Includes several oficial Python resources, such as the [begginers guide](http://wiki.python.org/moin/BeginnersGuide), [begginers erros](http://wiki.python.org/moin/BeginnerErrorsWithPythonProgramming) and [Python books](http://wiki.python.org/moin/PythonBooks). 
+- [Python wiki](http://wiki.python.org/moin/): Includes several oficial Python resources, such as the [beginners guide](http://wiki.python.org/moin/BeginnersGuide), [beginners errors](http://wiki.python.org/moin/BeginnerErrorsWithPythonProgramming) and [Python books](http://wiki.python.org/moin/PythonBooks). 
 - [Stack Overflow](http://stackoverflow.com/): An extremely usefull language-independent collaboratively edited question and answer site for programmers. Most of the questions and problems that you may face when coding have been probably already answered in this forum.
 
 ## [Google](google.com) is your friend
