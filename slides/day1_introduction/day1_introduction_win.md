@@ -137,8 +137,3 @@ Some of the most usefull resources that will help you solving problems and getti
 
 ---
 
-# Python3
-
----
-
-

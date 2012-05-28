@@ -273,9 +273,6 @@ cat FILENAME | wc # The FILENAME output is fed to the "wc" command, which counts
 ```
 
 ---
-# Python
-
----
 # What is python?
 
 Python is an **interpreted**, **object-oriented**, **high-level** programming language, that emphasizes in code readability:
@@ -393,9 +390,4 @@ Some of the most usefull resources that will help you solving problems and getti
 - Giving the current flood of digital data, the importance of google's search engine to sort over all information cannot be overstated. The trick, however, is knowing how to put your problem in order to obtain the most usefull answers. 
 
 ---
-
-# Python3
-
----
-
 
