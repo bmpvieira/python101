@@ -37,6 +37,16 @@ print (2 * 3) + (3 * 2)
 print 2 * (3 + 3) * 2
 ```
 
+Arithmetic examples: / //
+=========================
+
+```python
+print 8 / 3
+print 8.0 / 3
+print 8.0 // 3
+2<br />2.6666666666666665<br />2 #forceoutput
+```
+
  Arithmetic examples: ** and operators style
 ============================================
 
@@ -47,36 +57,6 @@ print 2 **4
 print 2** 4
 ```
 [PEP 8 -- Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008)
-
-Arithmetic examples: / // in Python 2 vs Python 3
-==================================================
-
-Python 2
---------
-
-```python
-print 8 / 3
-print 8.0 / 3
-print 8.0 // 3
-2<br />2.6666666666666665<br />2 #forceoutput
-```
-Python 3
---------
-
-```python
-print(8 / 3)
-print(8.0 / 3)
-print(8.0 // 3)
-```
-
-Python 2 vs Python 3
-====================
-More information
-----------------
-
-[Moving from Python 2 to Python 3 (cheat sheet)](http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/promotions/python/python2python3.pdf)
-[Python 2 or Python 3](http://wiki.python.org/moin/Python2orPython3)
-[What’s New in Python](http://docs.python.org/py3k/whatsnew/index.html)
 
 Arithmetic examples
 ===================
@@ -158,7 +138,6 @@ More information
 ----------------
 [Python Documentation: Identifiers](http://docs.python.org/reference/lexical_analysis.html#identifiers)
 
-
 Assignment operators
 ====================
 
@@ -211,20 +190,42 @@ a %= 4; print a
 a **= 6; print a
 ```
 
-Variables basic types
-=====================
+Data types
+==========
 
-* Numbers (integers and floats)
-* Strings
+* **Numbers (integers and floats)**
+* **Strings**
+* Lists
+* Tuples
+* Sets
+* Dictionaries
+
+More information
+----------------
+[Python Documentation](http://docs.python.org/library/stdtypes.html#numeric-types-int-float-long-complex)
 
 Integers and floats
 ===================
+
+* Numbers are created by numeric literals or as the result of built-in functions and operators
+* Numeric literals containing a decimal point or an exponent sign yield floating point numbers
+* Python fully supports mixed arithmetic
+
+Integers and floats assignment
+==============================
 
 ```python
 a = 1
 b = 2.0
 print a + b
 ```
+
+Strings
+=======
+
+* String literals are written in single or double quotes
+* In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained)
+* Strings are immutable sequence types: such objects cannot be modified once created
 
 Strings assignment
 ==================
@@ -333,8 +334,11 @@ seq = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 print seq[5:100]
 ```
 
-Strings methods
+&nbsp;
 ===============
+
+<h1>Strings methods</h1>
+
 
 
 Strings methods
@@ -342,10 +346,10 @@ Strings methods
 
 capitalize center count decode encode endswith expandtabs find format index isalnum isalpha isdigit islower isspace istitle isupper join ljust lower lstrip partition replace rfind rindex rjust rpartition rsplit rstrip split splitlines startswith strip swapcase title translate upper zfill
 
-Total: 75
+Total: 38
 ---------
 
-![Oh no!](http://dl.dropbox.com/u/921476/sad-challenge-failed.png "Oh no!")
+![CHALLENGE FAILED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/sad-challenge-failed.png "CHALLENGE FAILED")
 
 Strings methods
 ===============
@@ -354,6 +358,8 @@ count endswith find islower isupper join lower lstrip replace rfind rsplit rstri
 
 Total: 19
 ---------
+
+![CHALLENGE CONSIDERED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/determined-challenge-considered.png "CHALLENGE CONSIDERED")
 
 Strings methods
 ===============
@@ -369,9 +375,11 @@ Strings methods
 * translate
 * split and splitlines &larr; later with *Lists*
 
+Total: 10
+---------
 
 <div style="position: absolute; bottom: 10%; right: 20%">
-![That's more like it!](http://dl.dropbox.com/u/921476/determined-challenge-considered.png "That's more like it!")
+![CHALLENGE ACCEPTED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/determined-challenge-accepted.png "CHALLENGE ACCEPTED")
 </div>
 
 Strings methods
@@ -409,7 +417,7 @@ print seq.replace("T", "U")
 ```python
 seq = "TCCTGGAGGAGAATGGAGGTCAAGGGTCCAGCTGGAGAAGTTTAGGGTGTGGTGGGGGTGA"
 print seq.replace("T", "U", 3)
-TCCTGGUGGUGUATGGAGGTCAAGGGTCCAGCTGGAGAAGTTTAGGGTGTGGTGGGGGTGA #forceoutput
+UCCUGGAGGAGAAUGGAGGTCAAGGGTCCAGCTGGAGAAGTTTAGGGTGTGGTGGGGGTGA #forceoutput
 ```
 
 String translate
@@ -517,7 +525,8 @@ String strip, lstrip and rstrip
 
 ```python
 seq = "NNNNGCGCGCTGGAGGAGGTGAGAAGTTTAGGGTAAAAAAAAANNNN"
-seq = seq.strip("N"); print seq
+seq = seq.strip("N")
+print seq
 print seq.lstrip("GC")
 print seq.rstrip("A")
 print seq.strip("ATG")
@@ -527,10 +536,19 @@ GCGCGCTGGAGGAGGTGAGAAGTTTAGGGTAAAAAAAAA<br />TGGAGGAGGTGAGAAGTTTAGGGTAAAAAAAAA<b
 Data Structures
 ===============
 
-* Lists
+* Numbers
+* Strings
+* **Lists**
 * Tuples
 * Sets
 * Dicts
+
+Lists
+=====
+
+* List of objects (Duh!)
+* [Mutable sequence type (allow in-place modification of the object)](http://docs.python.org/library/stdtypes.html#mutable-sequence-types)
+
 
 Lists assignment
 ================
@@ -538,10 +556,12 @@ Lists assignment
     [a, b, c]
 
 ```python
-a = [1,2,3,4,5]
-b = ["a", "b", "c", "d", "f"]
-print a[0]
-print b[-1]
+a = []
+b = [1,2,3,4,5]
+c = ["a", "b", "c", "d", "f"]
+print a
+print b[0]
+print c[-1]
 ```
 
 Lists assignment
@@ -600,6 +620,22 @@ GTCAAGGGTCCAGCT
 GGAGAAGTTTAGGG"""
 sequences = raw_data.splitlines(True)
 ['TCCTGGAGGAG\n', 'GTCAAGGGTCCAGCT\n', 'GGAGAAGTTTAGGG'] #forceoutput
+```
+
+
+Lists are a mutable sequence type
+=================================
+
+```python
+mylist = ["A", "T", "G", "C"]
+print mylist[0]
+mylist[0] = "T"
+print mylist
+```
+
+```python
+myseq = "ATGC"
+print myseq[0]
 ```
 
 Multi-dimensional lists
@@ -696,12 +732,22 @@ mylist = ["A", "T", "G", "C", "A", "T"]
 print "".join(mylist)
 ```
 
+Data Structures
+===============
+
+* Numbers
+* Strings
+* Lists
+* **Tuples**
+* Sets
+* Dicts
+
 Tuples
 ======
 
-* Lists that are immutable (likes strings)
+* Lists that are immutable (like strings)
 * Useful for storing heterogeneous data in which order has semantic value (like coordinates)
-* Fast! 
+* Fast!!! 
 
 More information
 ----------------
@@ -716,6 +762,16 @@ coord2 = (32, 12)
 coordinates = [coord1, coord2]
 print coordinates 
 ```
+
+Data Structures
+===============
+
+* Numbers
+* Strings
+* Lists
+* Tuples
+* **Sets**
+* Dicts
 
 Sets
 ====
@@ -750,6 +806,16 @@ print p1 ^ p2 # colors in p1 or p2 but not both
 set(['red'])<br />set(['blue', 'green', 'yellow', 'red'])<br />set(['blue', 'green'])<br />set(['red', 'yellow']) #forceoutput
 ```
 
+Data Structures
+===============
+
+* Numbers
+* Strings
+* Lists
+* Tuples
+* Sets
+* **Dicts**
+
 Dictionaries
 ============
 
@@ -778,7 +844,9 @@ Dictionaries assignment
 sequences = {'s1': "AGTAGCGT", 's2': "ATGAC", 'primer': "AGCTGCTAG"}
 sequences['s1'] = "AAAAAAAA"
 print sequences
+print sequences.items()
 print sequences.keys()
+print sequences.values()
 print 'primer' in sequences
 ```
 
