@@ -383,7 +383,7 @@ In this example we have a string with 3 "columns" divided by tabs ("\t") in pyth
 
 &nbsp;
 
-    ['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517'] #forceoutput
+    ['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517']
 
 
 Take special care with:
