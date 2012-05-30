@@ -376,7 +376,7 @@ for lines in datalist:
     if lines.startswith("#"):
         pass
     else:
-        values = lines.split("\\t")
+        values = lines.split("&#92;t")
         fst = values[2]
         fsts.append(fst)
 print(fsts)
