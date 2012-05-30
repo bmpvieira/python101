@@ -271,13 +271,13 @@ Deeper into control flow:
 ----------------------------------------------------------------------------------------------------------------
 
 - Break
-    - will immediately stop any _for_ or _while_ loop
+    - will immediately stop any _for_ or _while_ loop;
 - Continue
-    - will immediately continue with the next iteration of the loop
+    - will immediately continue with the next iteration of the loop;
 - Else on loops
-    - will do something _after_ the loop is finished
+    - will do something _after and only_ the loop is finished. Breaking the loop will not run this code;
 - Pass
-    - will do absolutely nothing
+    - will do absolutely nothing;
 
 ---
 
@@ -292,7 +292,7 @@ skippoint = 2
 for i in range(1,6):
     if i == skippoint:
         continue
-    if i == breakpoint:
+    elif i == breakpoint:
         print("loop broke at " + str(breakpoint))
         break
     print i
@@ -364,24 +364,27 @@ Biological examples (part II):
 ==============================
 In this example we have a string with 3 "columns" divided by tabs ("\t") in python. Let's suppose that we wish to extract the Fst value for each column into a list.
 
-```python
-datastring = """# Locus ID	Overall Pi	Fst
-2	0.4	0.1666666667
-3	0.5	0.0000000000
-4	0.1	0.1095890411
-5	0.2	0.2068965517"""
-datalist = datastring.splitlines()
-fsts = []
-for lines in datalist:
-    if lines.startswith("#"):
-        pass
-    else:
-        values = lines.split("\t")
-        fst = values[2]
-        fsts.append(fst)
-print(fsts)
-['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517'] #forceoutput
-```
+
+    datastring = """# Locus ID	Overall Pi	Fst
+    2	0.4	0.1666666667
+    3	0.5	0.0000000000
+    4	0.1	0.1095890411
+    5	0.2	0.2068965517"""
+    datalist = datastring.splitlines()
+    fsts = []
+    for lines in datalist:
+        if lines.startswith("#"):
+            pass
+        else:
+            values = lines.split("\t")
+            fst = values[2]
+            fsts.append(fst)
+    print(fsts)
+
+&nbsp;
+
+    ['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517']
+
 
 Take special care with:
 -----------------------
