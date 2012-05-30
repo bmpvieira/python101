@@ -42,16 +42,15 @@ Diogo Silva
 - Supose you have a protein sequence and want to find out the frequency of the "**W**" amino acid and its first position in the sequence.
 
 ```python
-aa_sequence = "mgagkvikckaafwagkplwegevappkakapca"
-sequence_length = len(aa_sequence) 
+aa_sequence,position_list = "mgagkvikckaafwagkplwegevappkakapca",[]
+sequence_length = float(len(aa_sequence))
 for i in range (sequence_length): 
 	if aa_sequence[i] == "w":
-		first_position = i
-		break
+		position_list.append(str(i))
 
-p_count = aa_sequence.count("w")
+p_count = float(aa_sequence.count("w"))
 p_frequency = p_count/sequence_length
-print "The first position of the aa 'w' is %s and its frequency is %s" % (first_position,p_frequency)
+print "The aa 'w' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
 ```
 
 ---
@@ -61,17 +60,17 @@ print "The first position of the aa 'w' is %s and its frequency is %s" % (first_
 - Now you may want to know the same information about, say "**P**". You would need to re-write your entire code again for "**P**"...
 
 ```python
-aa_sequence = "mgagkvikckaafwagkplwegevappkakapca"
-sequence_length = len(aa_sequence) 
+aa_sequence,position_list = "mgagkvikckaafwagkplwegevappkakapca",[]
+sequence_length = float(len(aa_sequence))
 for i in range (sequence_length): 
 	if aa_sequence[i] == "p":
-		first_position = i
-		break
+		position_list.append(str(i))
 
-p_count = aa_sequence.count("p")
+p_count = float(aa_sequence.count("w"))
 p_frequency = p_count/sequence_length
-print "The first position of the aa 'p' is %s and its frequency is %s" % (first_position,p_frequency)
+print "The aa 'w' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
 ```
+
 And 19 more times to accomodate all other amino acids!!
 
 ---
@@ -83,20 +82,15 @@ And 19 more times to accomodate all other amino acids!!
 ```python
 aa_sequence = "mgagkvikckaafwagkplwegevappkakapca"
 def aa_statistics(sequence,aa):
-	sequence_length = len(sequence)
+	sequence_length,aa_positions = len(sequence),[]
 	aa_frequency = (lambda count,length:float(count)/float(length))
 	for i in range (sequence_length):
 		if sequence[i] == aa:
-			print (i,aa_frequency(sequence.count(aa),sequence_length))
-			break
+			aa_positions.append(str(i))
+	print (aa_frequency(sequence.count(aa),sequence_length),aa_positions)
 ```
-<!--w_position, w_frequency = aa_statistics(aa_sequence,"w") 
-print "The first position of the aa 'w' is %s and its frequency is %s" % (w_position,w_frequency)
 
-p_position, p_frequency = aa_statistics(aa_sequence,"p")
-print "The first position of the aa 'p' is %s and its frequency is %s" % (p_position,p_frequency) -->
-
-With only 6 lines of code, we are now able to provide the required information for all amino acids and for any input sequence.  
+With only 7 lines of code, we are now able to provide the required information for all amino acids and for any input sequence.  
 
 ---
 
@@ -126,7 +120,7 @@ def name ():
 ```python
 def print_me (): 
 	"This function prints something"
-	print "Hello Pythoneers"
+	print "Hello World"
 ```
 
 ---
@@ -138,7 +132,7 @@ A function can be created without arguments,
 ```python
 def print_me():
 	"Example of a simple function without arguments"
-	print "Hello Pythoneers"
+	print "Hello World"
 
 print_me()
 ```
@@ -202,7 +196,7 @@ def aa_statistics (sequence,aa): #folded
 	aa_frequency = float(sequence.count(aa))/float(sequence_length)
 	print aa_frequency
 aa_statistics (H_sapiens_aa,"K","G")
-Traceback (most recent call last):<br />  File "&lt; stdin &gt;", line 1, in &lt; module &gt; <br />TypeError: aa_statistics() takes exactly 2 arguments (3 given) #forceoutput
+TypeError: aa_statistics() takes exactly 2 arguments (3 given) #forceoutput
 ```
 
 ---
@@ -477,9 +471,9 @@ print DNA
 
 So, we have covered thus far:
 
-- How to define functions using the *def* keyword
+- How to define functions using the ***def*** keyword
 - How to call a function
 - The three main types of arguments a function can take: <font color=brown> Required </font>, <font color=blue> variable length </font> and <font color=green > default </font> arguments
 - The local and global scope of variables
-- The usage of the *return* keyword to return values from functions
+- The usage of the ***return*** keyword to return values from functions
 - Lambda functions
