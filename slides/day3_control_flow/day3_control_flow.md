@@ -271,13 +271,13 @@ Deeper into control flow:
 ----------------------------------------------------------------------------------------------------------------
 
 - Break
-    - will immediately stop any _for_ or _while_ loop
+    - will immediately stop any _for_ or _while_ loop;
 - Continue
-    - will immediately continue with the next iteration of the loop
+    - will immediately continue with the next iteration of the loop;
 - Else on loops
-    - will do something _after_ the loop is finished
+    - will do something _after and only_ the loop is finished. Breaking the loop will not run this code;
 - Pass
-    - will do absolutely nothing
+    - will do absolutely nothing;
 
 ---
 
@@ -292,7 +292,7 @@ skippoint = 2
 for i in range(1,6):
     if i == skippoint:
         continue
-    if i == breakpoint:
+    elif i == breakpoint:
         print("loop broke at " + str(breakpoint))
         break
     print i
@@ -376,7 +376,7 @@ for lines in datalist:
     if lines.startswith("#"):
         pass
     else:
-        values = lines.split("\t")
+        values = lines.split("\\t")
         fst = values[2]
         fsts.append(fst)
 print(fsts)
