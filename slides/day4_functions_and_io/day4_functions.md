@@ -39,7 +39,7 @@ Diogo Silva
 
 # Purpose
 
-- Supose you have a protein sequence and want to find out the frequency of the "**W**" amino acid and its first position in the sequence.
+- Supose you have a protein sequence and want to find out the frequency of the "**W**" amino acid and all its positions in the sequence.
 
 ```python
 aa_sequence,position_list = "mgagkvikckaafwagkplwegevappkakapca",[]
@@ -66,9 +66,9 @@ for i in range (sequence_length):
 	if aa_sequence[i] == "p":
 		position_list.append(str(i))
 
-p_count = float(aa_sequence.count("w"))
+p_count = float(aa_sequence.count("p"))
 p_frequency = p_count/sequence_length
-print "The aa 'w' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
+print "The aa 'p' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
 ```
 
 And 19 more times to accomodate all other amino acids!!
