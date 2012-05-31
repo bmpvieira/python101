@@ -254,7 +254,7 @@ Finally the loop:
 
 What this means - "While the variable ORF does __not__ end with any of the content of _stops_ do this:"
 
-    ORF += random.chioce(bases)
+    ORF += random.choice(bases)
 
 What this means - "__Add__ a random character from _bases_ to ORF."
 
@@ -364,27 +364,24 @@ Biological examples (part II):
 ==============================
 In this example we have a string with 3 "columns" divided by tabs ("\t") in python. Let's suppose that we wish to extract the Fst value for each column into a list.
 
-
-    datastring = """# Locus ID	Overall Pi	Fst
-    2	0.4	0.1666666667
-    3	0.5	0.0000000000
-    4	0.1	0.1095890411
-    5	0.2	0.2068965517"""
-    datalist = datastring.splitlines()
-    fsts = []
-    for lines in datalist:
-        if lines.startswith("#"):
-            pass
-        else:
-            values = lines.split("\t")
-            fst = values[2]
-            fsts.append(fst)
-    print(fsts)
-
-&nbsp;
-
-    ['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517']
-
+```python
+datastring = """# Locus ID	Overall Pi	Fst
+2	0.4	0.1666666667
+3	0.5	0.0000000000
+4	0.1	0.1095890411
+5	0.2	0.2068965517"""
+datalist = datastring.splitlines()
+fsts = []
+for lines in datalist:
+    if lines.startswith("#"):
+        pass
+    else:
+        values = lines.split("\t")
+        fst = values[2]
+        fsts.append(fst)
+print(fsts)
+['0.1666666667', '0.0000000000', '0.1095890411', '0.2068965517'] #forceoutput
+```
 
 Take special care with:
 -----------------------
