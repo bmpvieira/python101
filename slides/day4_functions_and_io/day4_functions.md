@@ -42,7 +42,8 @@ Diogo Silva
 - Supose you have a protein sequence and want to find out the frequency of the "**W**" amino acid and all its positions in the sequence.
 
 ```python
-aa_sequence,position_list = "mgagkvikckaafwagkplwegevappkakapca",[]
+aa_sequence = "mgagkvikckaafwagkplwegevappkakapca"
+position_list = []
 sequence_length = float(len(aa_sequence))
 for i in range (sequence_length): 
 	if aa_sequence[i] == "w":
@@ -50,7 +51,7 @@ for i in range (sequence_length):
 
 p_count = float(aa_sequence.count("w"))
 p_frequency = p_count/sequence_length
-print "The aa 'w' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
+print "The aa 'w' has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
 ```
 
 ---
@@ -60,7 +61,8 @@ print "The aa 'w' is has a frequency of %s and is found in the following sites: 
 - Now you may want to know the same information about, say "**P**". You would need to re-write your entire code again for "**P**"...
 
 ```python
-aa_sequence,position_list = "mgagkvikckaafwagkplwegevappkakapca",[]
+aa_sequence = "mgagkvikckaafwagkplwegevappkakapca"
+position_list = []
 sequence_length = float(len(aa_sequence))
 for i in range (sequence_length): 
 	if aa_sequence[i] == "p":
@@ -68,7 +70,7 @@ for i in range (sequence_length):
 
 p_count = float(aa_sequence.count("p"))
 p_frequency = p_count/sequence_length
-print "The aa 'p' is has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
+print "The aa 'p' has a frequency of %s and is found in the following sites: %s" % (p_frequency," ".join(position_list))
 ```
 
 And 19 more times to accomodate all other amino acids!!
@@ -150,7 +152,7 @@ print_me()
 ## <font color=brown> **Required arguments** </font>
 
 ```python
-def aa_statistics (sequence,aa):
+def aa_frequency (sequence,aa):
 	"This function takes exactly two arguments"
 	sequence_length = len(sequence)
 	aa_frequency = float(sequence.count(aa))/float(sequence_length)
@@ -160,12 +162,12 @@ def aa_statistics (sequence,aa):
 - When calling for a function with required arguments, the **exact** same number of arguments must be specified, no more and no less.
 
 ```python
-def aa_statistics (sequence,aa): #folded
+def aa_frequency (sequence,aa): #folded
 	"This function takes exactly two arguments"
 	sequence_length = len(sequence)
 	aa_frequency = float(sequence.count(aa))/float(sequence_length)
 	print aa_frequency
-aa_statistics ("AWKLCVPAMAKNENAW","K")
+aa_frequency ("AWKLCVPAMAKNENAW","K")
 ```
 
 ---
@@ -178,24 +180,24 @@ aa_statistics ("AWKLCVPAMAKNENAW","K")
 
 ```python
 H_sapiens_aa = "AWKLCVPAMAKNENAW" 
-def aa_statistics (sequence,aa): #folded
+def aa_frequency (sequence,aa): #folded
 	"This function takes exactly two arguments"
 	sequence_length = len(sequence)
 	aa_frequency = float(sequence.count(aa))/float(sequence_length)
 	print aa_frequency
-aa_statistics (H_sapiens_aa,"K")
+aa_frequency (H_sapiens_aa,"K")
 ```
 
 - If you specify a different number of arguments, however
 
 ```python
 H_sapiens_aa = "AWKLCVPAMAKNENAW" 
-def aa_statistics (sequence,aa): #folded
+def aa_frequency (sequence,aa): #folded
 	"This function takes exactly two arguments"
 	sequence_length = len(sequence)
 	aa_frequency = float(sequence.count(aa))/float(sequence_length)
 	print aa_frequency
-aa_statistics (H_sapiens_aa,"K","G")
+aa_frequency (H_sapiens_aa,"K","G")
 TypeError: aa_statistics() takes exactly 2 arguments (3 given) #forceoutput
 ```
 
@@ -347,7 +349,6 @@ def print_me():
 	print sequence
 
 print sequence
-print_me()
 ```
 
 - Note that without the global keyword, global variables are overwritten by local variables with the same name defined in a function
