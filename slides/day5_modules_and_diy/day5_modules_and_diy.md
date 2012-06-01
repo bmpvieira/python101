@@ -16,6 +16,7 @@ Today we will be speaking about python modules:
     - The ***sys*** (system) module
     - The ***re*** (regular expressions) module
     - The ***os*** (operating system) module
+    - The ***subprocess*** (spawn new processes) module
     - The ***Bio*** (BioPython) module
 
 ---
@@ -47,8 +48,7 @@ How do modules work?
 Importing modules:
 ------------------
 
-* In order to use the contents of a specific module, you must use the [import](http://docs.python.org/reference/simple_stmts.html#import "import\(\) documentation") command.
-
+In order to use the contents of a specific module, you must use the [import](http://docs.python.org/reference/simple_stmts.html#import "import\(\) documentation") command.
 
     import «module»
     import «module» as «other_name»
@@ -59,11 +59,12 @@ Importing modules:
 Using the contents of a module:
 -------------------------------
 
-* After importing a module, we can use it's contents in different ways depending on how the module was imported:
+After importing a module, we can use it's contents in different ways depending on how the module was imported:
+
 
     import sys
     print(sys.argv[0])
-    ---
+
     from sys import argv
     print(argv[0])
 
@@ -72,11 +73,11 @@ Using the contents of a module:
 Writing a module
 ================
 
-In order to write a module, you just have to write a script that can be as simple as declaring some varables.
+In order to write a module, you just have to write a script that can be as simple as declaring some variables.
 
 Afterwards, just import it into your *main* program and they will be ready for use.
 
-It is a good practice, however to add the following if statement to your code:
+However, it is a good practice,  to add the following ``if`` statement to your code:
 
     if __name__ == "__main__":
         «Program»
@@ -98,7 +99,7 @@ python my_script.py first_argument second_argument third_argument
  #forceoutput
 ```
 
-* After the module has been imported to in the script, the aditional arguments are stored in a list, which can be accessed in a simple way:
+* After the module has been imported into the script, the aditional arguments are stored in a list, which can be accessed in a simple way:
 
 ```python
 import sys
@@ -123,15 +124,15 @@ The _re_ module
 About _re_:
 -----------
 
-Regular expressions (RE) are a very large topic. A whole course could be had on them.
+* Regular expressions (RE) are a very large topic. A whole course could be had on them.
 
-They are very useful when our code starts getting full of endswith() and startswith() and lot's of conditionals all over.
+* They are very useful when our code starts getting full of endswith() and startswith() and lot's of conditionals all over.
 
-RE can make our lives a lot easier, but they take a lot of getting used to and even then, they produce hard to read code. But even despite these shortcomings, __they are awesome__!
+* RE can make our lives a lot easier, but they take a lot of getting used to and even then, they produce hard to read code. But even despite these shortcomings, __they are awesome__!
 
-If you look [here](http://docs.python.org/library/re.html "RE documentation") you can see that this section of python's documentation is as large as say - the whole control flow section. But fear not, the docs are there to help you and you don't have to learn everything about RE today. The goal here is to let you know what can be done.
+* If you look [here](http://docs.python.org/library/re.html "RE documentation") you can see that this section of python's documentation is as large as say - the whole control flow section. But fear not, the docs are there to help you and you don't have to learn everything about RE today. The goal here is to let you know what can be done.
 
-Later you may want to go [here](http://docs.python.org/howto/regex.html#regex-howto "RE how-to") to learn more. It is an introductory tutorial to RE.
+* Later you may want to go [here](http://docs.python.org/howto/regex.html#regex-howto "RE how-to") to learn more. It is an introductory tutorial to RE.
 
 ---
 
@@ -141,9 +142,9 @@ The _re_ module
 What is a RE?
 -------------
 
-A RE specifies a set of strings that match it; the functions in the _re_ module let you check if a particular string matches a given regular expression.
+* A RE specifies a set of strings that match it; the functions in the _re_ module let you check if a particular string matches a given regular expression.
 
-This often requires the use of _special_ characters - AKA __metacharacters__.
+* This often requires the use of _special_ characters - AKA __metacharacters__.
 
 The metacharacters
 ------------------
@@ -188,6 +189,187 @@ You must test this code in IDLE or equivalent.
 
 ---
 
+The os module
+=============
+
+Miscellaneous operating system interfaces
+-----------------------------------------
+Provides a portable way of using operating system dependent functionality.
+
+More information
+-----------------
+[Python Documentation](http://docs.python.org/library/os.html)
+
+The os module
+=============
+
+    os.chdir(path)
+
+Change the current working directory to path.
+
+Availability: Unix, Windows.
+
+
+    os.getcwd()
+
+Return a string representing the current working directory.
+
+Availability: Unix, Windows.
+
+```python
+import os
+print os.getcwd()
+os.chdir("Scripts")
+print os.getcwd()
+os.chdir("..")
+print os.getcwd()
+'/home/bruno'<br />'/home/bruno/Scripts'<br />'/home/bruno' #forceoutput
+```
+
+The os module
+=============
+
+    os.listdir(path)
+
+Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order.
+
+Availability: Unix, Windows.
+
+```python
+import os
+print os.getcwd()
+print os.list("Scripts")
+print os.list(".")
+print os.list("..")1
+'/home/bruno'<br />['script1.py', 'script2.py']<br />['Documents', 'Music', 'Movies', 'Scripts']<br />['bruno', 'diogo', 'francisco'] #forceoutput
+```
+
+
+The os module
+=============
+
+    os.mkdir(path[, mode])
+
+Create a directory named path. If the directory already exists, an error is raised.
+
+Availability: Unix, Windows.
+
+```python
+import os
+print os.listdir(".")
+os.mkdir("NewDir")
+print os.listdir(".")
+['Documents', 'Music', 'Movies', 'Scripts']<br />['Documents', 'Music', 'Movies', 'NewDir', 'Scripts'] #forceoutput
+```
+
+The os module
+=============
+
+    os.makedirs(path[, mode])
+
+Recursive directory creation function. Like **mkdir()**, but makes all intermediate-level directories needed to contain the leaf directory. Raises an error exception if the leaf directory already exists or cannot be created.
+
+```python
+import os
+print os.getcwd()
+os.makedirs("Scripts/Project1/testing")
+print os.listdir("Scripts")
+print os.listdir("Scripts/Project1")
+'/home/bruno'<br />['Project1']<br />['testing'] #forceoutput
+```
+
+The os module
+=============
+
+    os.remove(path)
+
+Remove (delete) the file path. If path is a directory, an error is raised. For directories, use **rmdir()** instead.
+Availability: Unix, Windows.
+
+```python
+import os
+print os.listdir("Scripts")
+os.remove("Scripts/script2.py")
+print os.listdir("Scripts")
+
+['script1.py', 'script2.py']<br />['script1.py'] #forceoutput
+```
+
+The os module
+=============
+
+    os.rmdir(path)
+
+Remove (delete) the directory path. Only works when the directory is empty, otherwise, an error is raised.
+Availability: Unix, Windows.
+
+```python
+import os
+print os.listdir(".")
+os.remove("NewDir")
+print os.listdir(".")
+
+['Documents', 'Music', 'Movies', 'NewDir', 'Scripts']<br />['Documents', 'Music', 'Movies', 'Scripts'] #forceoutput
+```
+
+    os.removedirs(path)
+
+Remove directories recursively. Works like rmdir() except that, if the leaf directory is successfully removed, removedirs() tries to successively remove every parent directory mentioned in path until an error is raised.
+
+```python
+import os
+os.remove("NewDir/SubDir")
+ #forceoutput
+```
+
+The os module
+=============
+
+    os.rename(src, dst)
+
+Rename the file or directory src to dst. If dst is a directory, an error will be raised. 
+
+**Unix**: if dst exists and is a file, it will be replaced silently if the user has permission. 
+**Windows**: if dst already exists, an error will be raised even if it is a file.
+
+Availability: Unix, Windows.
+
+The subprocess module
+=====================
+
+    subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, universal_newlines=False)
+
+Run command with arguments and return its output as a byte string.
+
+```python
+from subprocess import check_output
+check_output(["echo", "Hello World!"])
+'Hello World!\n' #forceoutput
+```
+
+The subprocess module
+=====================
+
+Shell pipe example
+------------------
+
+    [bruno@laptop ~]$ ls -l | grep py
+    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py
+    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py
+
+```python
+from subprocess import check_output
+check_output("ls -l | grep py", shell=True)
+
+-rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py<br />-rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py #forceoutput
+```
+
+
+More information
+----------------
+[Python Documentation](http://docs.python.org/library/subprocess.html#module-subprocess)
+
+
 The BioPython (*Bio*) module
 ============================
 
@@ -196,7 +378,7 @@ The Biopython module, is a collection of tools and modules that have been develo
 - **Parsing** several bioinformatic file types (FastA, Clustalw, GenBank, PubMed, ExPASy, among others) into utilizable data structures that ease the processing of the data;
 - Tools that easily perform common operations on sequences, such as **translation**, **transcription**, **reverse complement**.
 - Interfaces (both local and remote) to common bioinformatic programms, such as **NCBI's BLAST** and **Clustalw** alignment program.
-- **Downloading** files from public resources, such as NCBI databases
+- [**Downloading**](http://www.bio-cloud.info/Biopython/en/ch8.html) files from public resources, such as NCBI databases
 
 
 ---
@@ -262,14 +444,14 @@ The BioPython (*Bio*) module
 Whetting Your Appetite
 ----------------------
 
-- The **SeqRecord** class allows identifiers and features to be associated with a sequence, creating sequence records much more richer in information:
+The **SeqRecord** class allows identifiers and features to be associated with a sequence, creating sequence records much more richer in information:
 
-    - **seq**: The sequence itself
-    - **id**: A unique sequence identifier. Typically an accession number.
-    - **name**: A "common" name/id for the sequence as a string. 
-    - **annotations**: A dictionary with additional information about the sequence
+- **seq**: The sequence itself
+- **id**: A unique sequence identifier. Typically an accession number.
+- **name**: A "common" name/id for the sequence as a string. 
+- **annotations**: A dictionary with additional information about the sequence
 
- These features can be created manually, or imported directly from a database record (GenBank).
+These features can be created manually, or imported directly from a database record (GenBank).
 
 ---
 
