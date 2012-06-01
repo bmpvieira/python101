@@ -25,7 +25,7 @@ What are modules?
 =================
 
 ```python
-\# Contents of module test.py
+ #Contents of module test.py
 sequence_list = ["AGCTG","AGCTG","AGCTG"]
 
 species_dictionary = {"Hs":"Homo_sapiens","Mm":"Mus_musculus"}
