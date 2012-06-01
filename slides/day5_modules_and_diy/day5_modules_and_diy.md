@@ -23,6 +23,10 @@ Today we will be speaking about python modules:
 
 What are modules?
 =================
+![Modules](https://github.com/bmpvieira/python101/raw/master/slides/day5_modules_and_diy/assets/python.png)
+
+What are modules?
+=================
 
 ```python
  #Contents of module test.py
