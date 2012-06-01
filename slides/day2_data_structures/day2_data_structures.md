@@ -170,11 +170,11 @@ Assignment examples
 
 ```python
 counter = 0
-\# Do something and increment counter
+ # Do something and increment counter
 counter += 1
-\# Repeat something in a loop and increment counter each time
+ # Repeat something in a loop and increment counter each time
 counter += 1
-\# Check expected counter number reached and stop working
+ # Check expected counter number reached and stop working
 print counter
 ```
 
