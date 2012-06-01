@@ -378,7 +378,7 @@ The Biopython module, is a collection of tools and modules that have been develo
 - **Parsing** several bioinformatic file types (FastA, Clustalw, GenBank, PubMed, ExPASy, among others) into utilizable data structures that ease the processing of the data;
 - Tools that easily perform common operations on sequences, such as **translation**, **transcription**, **reverse complement**.
 - Interfaces (both local and remote) to common bioinformatic programms, such as **NCBI's BLAST** and **Clustalw** alignment program.
-- **Downloading** files from public resources, such as NCBI databases
+- [**Downloading**](http://www.bio-cloud.info/Biopython/en/ch8.html) files from public resources, such as NCBI databases
 
 
 ---
