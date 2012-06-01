@@ -194,7 +194,11 @@ The os module
 
 Miscellaneous operating system interfaces
 -----------------------------------------
+
 Provides a portable way of using operating system dependent functionality.
+
+* Some methods are only available on some OS
+* Some methods return different results depending on the OS
 
 More information
 -----------------
@@ -333,6 +337,15 @@ Rename the file or directory src to dst. If dst is a directory, an error will be
 **Windows**: if dst already exists, an error will be raised even if it is a file.
 
 Availability: Unix, Windows.
+
+Calling external programs
+=========================
+
+    os.popen(command[, mode[, bufsize]])
+  
+Deprecated since version 2.6: This function is obsolete. Use the subprocess module. Check especially the Replacing Older Functions with the subprocess Module section.
+
+[Python Documentation](http://docs.python.org/library/os.html#os.popen)
 
 The subprocess module
 =====================
