@@ -133,17 +133,17 @@ If you look [here](http://docs.python.org/library/re.html "RE documentation") yo
 
 Later you may want to go [here](http://docs.python.org/howto/regex.html#regex-howto "RE how-to") to learn more. It is an introductory tutorial to RE.
 
+---
+
+The _re_ module 
+=========================
+
 What is a RE?
 -------------
 
 A RE specifies a set of strings that match it; the functions in the _re_ module let you check if a particular string matches a given regular expression.
 
 This often requires the use of _special_ characters - AKA __metacharacters__.
-
----
-
-The _re_ module 
-=========================
 
 The metacharacters
 ------------------
