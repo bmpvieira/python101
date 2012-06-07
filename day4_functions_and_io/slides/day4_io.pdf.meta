@@ -2,11 +2,10 @@ InfoKey: Creator
 InfoValue: cairo 1.9.5 (http://cairographics.org)
 InfoKey: Producer
 InfoValue: cairo 1.9.5 (http://cairographics.org)
-NumberOfPages: 11
-InfoKey: Title
-InfoValue: Python 101 Course: Day 3 Control Flow
+NumberOfPages: 4
+InfoValue: Python 101 Course: Day 4 Input and Output
 InfoKey: Author
-InfoValue: Francisco Pina-Martins
+InfoValue: Diogo Silva
 InfoKey: Subject
 InfoValue: Python course from CoBiG2/CBA at FCUL, Portugal
 InfoKey: Keywords
