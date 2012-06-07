@@ -23,7 +23,7 @@ Today we will be speaking about python modules:
 
 What are modules?
 =================
-![Modules](https://github.com/bmpvieira/python101/raw/master/slides/day5_modules_and_diy/assets/python.png)
+![Modules](https://github.com/bmpvieira/python101/raw/master/day5_modules_and_diy/slides/assets/python.png)
 
 What are modules?
 =================
@@ -118,7 +118,7 @@ print str(sys.argv) # Note that the first argument in the list is the name of th
 The _re_ module
 ===============
 
-![Regular Expressions](https://github.com/bmpvieira/python101/raw/master/slides/day5_modules_and_diy/assets/regular_expressions.png)
+![Regular Expressions](https://github.com/bmpvieira/python101/raw/master/day5_modules_and_diy/slides/assets/regular_expressions.png)
 
 ---
 

@@ -25,7 +25,7 @@ Python 101 team
 
 - The UNIX shell acts as an interface between the **user** and the **kernel**, which is the hub of the operating system
 
-![unix shell](https://dl.dropbox.com/s/uf42mqt2ts99ncf/unix_shell.png?dl=1)
+![unix shell](https://github.com/bmpvieira/python101/raw/master/day1_introduction/slides/assets/unix_shell.png)
 
 - Through the shell, the user has a wide range of programs at its disposal that allow file manipulations, navigation through the directory structure, etc. Here we will provide a short tour through the shell using some of the most useful programs:
 	- **ls**
@@ -308,7 +308,7 @@ Python is an **interpreted**, **object-oriented**, **high-level** programming la
 
 In its easiest form, the iteractive mode can be initialized by simply typing "**python**" in the command line prompt.
 
-![Python interpreter](https://dl.dropbox.com/s/9codcvkso9suz0x/Python_interpreter.png?dl=1)
+![Python interpreter](https://github.com/bmpvieira/python101/raw/master/day1_introduction/slides/assets/python_interpreter.png)
 
 - The symbols "**>>>**" are the prompt of the interactive mode. To execute an instruction, write on the prompt line and press enter.
 - The symbols "**...**" are the secondary prompt. They represent continuation lines, i.e., when the instruction is not yet complete and ready to be executed.

@@ -349,7 +349,7 @@ capitalize center count decode encode endswith expandtabs find format index isal
 Total: 38
 ---------
 
-![CHALLENGE FAILED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/sad-challenge-failed.png "CHALLENGE FAILED")
+![CHALLENGE FAILED](https://raw.github.com/bmpvieira/python101/master/day2_data_structures/slides/assets/sad-challenge-failed.png "CHALLENGE FAILED")
 
 Strings methods
 ===============
@@ -359,7 +359,7 @@ count endswith find islower isupper join lower lstrip replace rfind rsplit rstri
 Total: 19
 ---------
 
-![CHALLENGE CONSIDERED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/determined-challenge-considered.png "CHALLENGE CONSIDERED")
+![CHALLENGE CONSIDERED](https://raw.github.com/bmpvieira/python101/master/day2_data_structures/slides/assets/determined-challenge-considered.png "CHALLENGE CONSIDERED")
 
 Strings methods
 ===============
@@ -379,7 +379,7 @@ Total: 10
 ---------
 
 <div style="position: absolute; bottom: 10%; right: 20%">
-![CHALLENGE ACCEPTED](https://raw.github.com/bmpvieira/python101/master/slides/day2_data_structures/assets/determined-challenge-accepted.png "CHALLENGE ACCEPTED")
+![CHALLENGE ACCEPTED](https://raw.github.com/bmpvieira/python101/master/day2_data_structures/slides/assets/determined-challenge-accepted.png "CHALLENGE ACCEPTED")
 </div>
 
 Strings methods
