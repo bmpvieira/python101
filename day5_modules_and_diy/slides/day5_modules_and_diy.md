@@ -115,6 +115,52 @@ print str(sys.argv) # Note that the first argument in the list is the name of th
 
 ---
 
+Calling external programs
+=========================
+
+    os.popen(command[, mode[, bufsize]])
+  
+Deprecated since version 2.6: This function is obsolete. Use the subprocess module. Check especially the Replacing Older Functions with the subprocess Module section.
+
+[Python Documentation](http://docs.python.org/library/os.html#os.popen)
+
+The subprocess module
+=====================
+
+    subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, universal_newlines=False)
+
+Run command with arguments and return its output as a byte string.
+
+```python
+from subprocess import check_output
+check_output(["echo", "Hello World!"])
+'Hello World!\n' #forceoutput
+```
+
+The subprocess module
+=====================
+
+Shell pipe example
+------------------
+
+    [bruno@laptop ~]$ ls -l | grep py
+    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py
+    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py
+
+```python
+from subprocess import check_output
+check_output("ls -l | grep py", shell=True)
+
+-rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py<br />-rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py #forceoutput
+```
+
+
+More information
+----------------
+[Python Documentation](http://docs.python.org/library/subprocess.html#module-subprocess)
+
+---
+
 The _re_ module
 ===============
 
@@ -341,50 +387,6 @@ Rename the file or directory src to dst. If dst is a directory, an error will be
 **Windows**: if dst already exists, an error will be raised even if it is a file.
 
 Availability: Unix, Windows.
-
-Calling external programs
-=========================
-
-    os.popen(command[, mode[, bufsize]])
-  
-Deprecated since version 2.6: This function is obsolete. Use the subprocess module. Check especially the Replacing Older Functions with the subprocess Module section.
-
-[Python Documentation](http://docs.python.org/library/os.html#os.popen)
-
-The subprocess module
-=====================
-
-    subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, universal_newlines=False)
-
-Run command with arguments and return its output as a byte string.
-
-```python
-from subprocess import check_output
-check_output(["echo", "Hello World!"])
-'Hello World!\n' #forceoutput
-```
-
-The subprocess module
-=====================
-
-Shell pipe example
-------------------
-
-    [bruno@laptop ~]$ ls -l | grep py
-    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py
-    -rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py
-
-```python
-from subprocess import check_output
-check_output("ls -l | grep py", shell=True)
-
--rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script1.py<br />-rw-r--r-- 1 bruno cobig2      0 May 31 19:21 script2.py #forceoutput
-```
-
-
-More information
-----------------
-[Python Documentation](http://docs.python.org/library/subprocess.html#module-subprocess)
 
 
 The BioPython (*Bio*) module
