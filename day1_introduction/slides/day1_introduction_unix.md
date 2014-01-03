@@ -310,7 +310,7 @@ In its easiest form, the iteractive mode can be initialized by simply typing "**
 
 ![Python interpreter](https://github.com/bmpvieira/python101/raw/master/day1_introduction/slides/assets/python_interpreter.png)
 
-- The symbols ">>>" are the prompt of the interactive mode. To execute an instruction, write on the prompt line and press enter.
+- The symbols "> > >" are the prompt of the interactive mode. To execute an instruction, write on the prompt line and press enter.
 - The symbols "**...**" are the secondary prompt. They represent continuation lines, i.e., when the instruction is not yet complete and ready to be executed.
 - To exit the interactive mode, you can use the key combo "**Ctrl + D**" or type "**quit()**"
 
