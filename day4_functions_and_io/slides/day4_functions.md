@@ -107,7 +107,7 @@ def name ():
 ```
 
 1. "def" - Functions must start with the "**def**" keyword.
-1. "**name**" - The name of the function must not contain special characters or whitespaces
+1. "**name**" - The name of the function must not contain special characters or whitespaces. ([See the official Python style guide on how to appropriately name functions](http://www.python.org/dev/peps/pep-0008/#naming-conventions))
 1.  "**()**" - Parenthesis enclose input parameters or arguments 
 1. ":" - The code block within every function starts with a **colon** and is **indented**
 1. Documentation [optional] - It is good practice to document your function
