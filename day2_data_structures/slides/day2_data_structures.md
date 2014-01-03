@@ -1,7 +1,7 @@
 Data Structures
 ===============
 
-Francisco Pina-Martins e Diogo N. Silva
+Francisco Pina-Martins and Diogo N. Silva
 
 Overview
 ========
