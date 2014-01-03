@@ -335,7 +335,7 @@ Writing scripts will make the majority of your coding experience. A python scrip
 
 # Linux
 
-## In order to install everything you will need for the course all you have to do is issue the following command in the terminal:
+In order to install everything you will need for the course all you have to do is issue the following command in the terminal:
 
 ```
 sudo apt-get install python2 ipython-notebook geany idle
