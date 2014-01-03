@@ -1,7 +1,7 @@
 Data Structures
 ===============
 
-Bruno Vieira
+Francisco Pina-Martins e Diogo N. Silva
 
 Overview
 ========
@@ -547,6 +547,7 @@ Lists
 =====
 
 * List of objects (Duh!)
+* Ordered
 * [Mutable sequence type (allow in-place modification of the object)](http://docs.python.org/library/stdtypes.html#mutable-sequence-types)
 
 
