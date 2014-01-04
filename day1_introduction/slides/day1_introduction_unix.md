@@ -348,34 +348,38 @@ Your package manager will handle everything for you.
 
 These commands will install Python and some Scientific modules.
 
+1 Download and install Xcode from app store
+2 Download and Install Command Line Tools from Xcode
+```xcode-select --install```
+3 Install Homebrew package manager
+```ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"```
+4Add Homebrew repositories for science and python
 ```
-#1) Download and install Xcode from app store
-#2) Download and Install Command Line Tools from Xcode:
-xcode-select --install
-#3) Install Homebrew package manager
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-#4) Add Homebrew repositories for science and python
 brew tap homebrew/science
 brew tap homebrew/python
-#5) Update Homebrew packages
-brew update
-#6) Install Python
-brew install python
-#7) Install SciPy
+```
+5) Update Homebrew packages
+```brew update```
+6) Install Python
+```brew install python```
+7) Install SciPy
+```
 brew install gfortran
 pip install scipy
-#6) Install matplotlib
-pip install matplotlib
-#8) Install ipython
+```
+6 Install matplotlib
+```pip install matplotlib```
+8 Install ipython
+```
 brew install pyqt
 pip install pyzmq
 pip install pygments
 pip install jinja2
 pip install tornado
 pip install ipython
-#9) Install biopython
-pip install biopython
 ```
+9 Install biopython
+```pip install biopython```
 
 ---
 
