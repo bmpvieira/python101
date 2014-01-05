@@ -391,6 +391,7 @@ brew tap homebrew/python
 ```
 brew update
 ```
+
 ---
 # Mac (Part II)
 
