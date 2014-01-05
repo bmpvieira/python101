@@ -363,7 +363,7 @@ Installing python
 - In order to install everything you will need for the course all you have to do is issue the following command in the terminal:
 
 ```
-sudo apt-get install python2 ipython-notebook geany idle
+sudo apt-get install python2 ipython-notebook geany idle python-biopython
 ```
 
 - Your package manager will handle everything for you.
@@ -454,7 +454,7 @@ Installing python
 
 - For this course, we will use the EDP (Enthought Python Distribution) package as it already contains a number of usefull modules as well as a text editor. 
 	
-- [Install link](https://www.enthought.com/products/epd/).
+	- [Install link](https://www.enthought.com/products/epd/).
 
 ## Biopython installation
 
