@@ -464,7 +464,7 @@ Installing python
 
 - The installation of IPython on Windows is greatly facilitated by EDP. Just open a terminal window and write:
 
-```python
+```
 enpkg ipython
 ```
 
@@ -488,7 +488,7 @@ enpkg ipython
 
 ---
 
-## Script mode 
+# Script mode 
 
 Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)) will make the majority of your coding experience. A python script that contains a set of instructions can be executed in more than one way:
 
