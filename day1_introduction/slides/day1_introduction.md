@@ -452,7 +452,7 @@ Installing python
 
 ## Python installation
 
-- For this course, we will use the EDP (Enthought Python Distribution) package as it already contains a number of usefull modules as well as a text editor. [Install link](https://www.enthought.com/products/epd/).
+- For this course, we will use the EDP (Enthought Python Distribution) package as it already contains a number of usefull modules and a text editor. [Install link](https://www.enthought.com/products/epd/).
 	
 ## Biopython installation
 
