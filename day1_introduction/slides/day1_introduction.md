@@ -452,7 +452,7 @@ Installing python
 
 ## Python installation
 
-- For this course, we will use the EDP (Enthought Python Distribution) package as it already contains a number of usefull modules and a text editor. [Install link](https://www.enthought.com/products/epd/).
+- For this course, we will use the [EPD](https://www.enthought.com/products/epd/) (Enthought Python Distribution) package as it already contains a number of usefull modules and a text editor.
 	
 ## Biopython installation
 
@@ -460,7 +460,7 @@ Installing python
 
 ## IPython installation
 
-- The installation of IPython on Windows is greatly facilitated by EDP. Just open a terminal window and write:
+- The installation of IPython on Windows is greatly facilitated by EPD. Just open a terminal window and write:
 
 ```
 enpkg ipython
