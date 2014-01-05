@@ -56,7 +56,7 @@ Python is an **interpreted**, **object-oriented**, **high-level** programming la
 
 In its easiest form, the iteractive mode can be initialized by simply typing "**python**" in the command line prompt.
 
-![2 different shells](https://github.com/bmpvieira/python101/raw/master/day1_introduction/slides/assets/2_shells.png)
+![Python interpreter](https://github.com/bmpvieira/python101/raw/master/day1_introduction/slides/assets/python_interpreter_win.png)
 
 - The symbols "&gt; &gt; &gt;" are the prompt of the interactive mode. To execute an instruction, write on the prompt line and press enter.
 - The symbols "**...**" are the secondary prompt. They represent continuation lines, i.e., when the instruction is not yet complete and ready to be executed.
