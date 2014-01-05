@@ -369,7 +369,7 @@ sudo apt-get install python2 ipython-notebook geany idle
 Your package manager will handle everything for you.
 
 ---
-# Mac
+# Mac (Part I)
 
 These commands will install Python and some Scientific modules.
 
@@ -391,6 +391,8 @@ brew tap homebrew/python
 ```
 brew update
 ```
+---
+# Mac (Part II)
 6 Install Python
 ```
 brew install python
@@ -479,6 +481,5 @@ Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http:
 Notes for windows users:
 
 - Script files must end with a ".py" extension
-
 
 ---
