@@ -488,7 +488,7 @@ enpkg ipython
 
 # Script mode 
 
-Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)) will make the majority of your coding experience. A python script that contains a set of instructions can be executed in more than one way:
+#### Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)) will make the majority of your coding experience. A python script that contains a set of instructions can be executed in more than one way:
 
 - **Script argument way**:
 	- Run your python interpreter in the prompt with the script as an argument (e.g. python my_script.py). This mode is prefered for scripts that require arguments to be passed when executed
@@ -498,6 +498,6 @@ Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http:
 
 Notes for windows users:
 
-- Script files must end with a ".py" extension
+- Script files **must** end with a ".py" extension
 
 ---
