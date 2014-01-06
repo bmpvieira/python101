@@ -20,6 +20,16 @@ Python 101 team
 - **Day 5**: Modules (*sys*, *os*, *re*, *Bio*) and Do It Yourself day
 
 ---
+# Instructors
+
+Bruno Costa
+Bruno Vieira [@bmpvieira](http://twitter.com/bmpvieira)
+Diogo Silva [@odiogosilva](http://twitter.com/bmpvieira)
+Francisco Pina-Martins
+Joana Fina
+João Silva
+
+---
 
 # The UNIX shell
 
