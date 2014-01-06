@@ -500,6 +500,11 @@ enpkg ipython
 
 Writing scripts using a text editor ([geany](http://www.geany.org/), [vim](http://www.vim.org/)) will make the majority of your coding experience. A python script that contains a set of instructions can be executed in more than one way:
 
+- **[Shebang](http://www.youtube.com/watch?v=5ihtX86JzmA#t=1m15s) way** (Unix only):
+	1. The first line of the script file must contain a "shebang" (#!) followed by the path of the Python executable (e.g. #!/usr/bin/python). This will tell the program loader which interperter should be used to execute the file.
+	1. Make the script file executable (usually with the "chomd +x filename" command)
+	1. Run the script by typing "./my_script.py" in the terminal prompt.
+
 - **Script argument way**:
 	- Run your python interpreter in the prompt with the script as an argument (e.g. python my_script.py). This mode is prefered for scripts that require arguments to be passed when executed
 
