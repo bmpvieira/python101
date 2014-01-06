@@ -7,7 +7,7 @@ Python 101 team
 
 Bruno Costa
 Bruno Vieira [@bmpvieira](http://twitter.com/bmpvieira)
-Diogo Silva [@odiogosilva](http://twitter.com/bmpvieira)
+Diogo Silva [@odiogosilva](http://twitter.com/odiogosilva)
 Francisco Pina-Martins
 Joana Fina
 João Silva
