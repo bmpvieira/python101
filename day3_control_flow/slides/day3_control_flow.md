@@ -233,6 +233,7 @@ stops = ("TGA","TAG","TAA")
 while ORF.endswith(stops) == False:
     ORF += random.choice(bases)
 print ORF
+ATGGGATCGAGGTTACTGA #forceoutput
 ```
 
 Wow, wait a minuite, what is this? Let's look at it in parts. (Next slide please!)
