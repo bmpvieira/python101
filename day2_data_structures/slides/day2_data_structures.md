@@ -514,8 +514,8 @@ String join
     str.join(iterable)
 
 ```python
-str = "TCCTGG"
-print ":".join(str)
+dna = "TCCTGG"
+print ":".join(dna)
 ```
 
 String strip, lstrip and rstrip

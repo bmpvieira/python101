@@ -233,6 +233,7 @@ stops = ("TGA","TAG","TAA")
 while ORF.endswith(stops) == False:
     ORF += random.choice(bases)
 print ORF
+ATGGGATCGAGGTTACTGA #forceoutput
 ```
 
 Wow, wait a minuite, what is this? Let's look at it in parts. (Next slide please!)
@@ -386,9 +387,9 @@ print(fsts)
 Take special care with:
 -----------------------
 
-- The [splitlines()](docs.python.org/library/stdtypes.html#str.endswith "splitlines\(\) type documentation") type; this built-in will split a string into a list where each element is a line of the string;
-- The [startswith()](http://docs.python.org/library/stdtypes.html#str.startswith "startswith\(\) function documentation") function; it is pretty much self explanatory;
-- The [split()](http://docs.python.org/library/stdtypes.html#str.split "split\(\) function documentation") function; it will split a string into a list of words eliminating the separator.
+- The [splitlines()](http://docs.python.org/library/stdtypes.html#str.endswith "splitlines\(\) method documentation") method; this built-in will split a string into a list where each element is a line of the string;
+- The [startswith()](http://docs.python.org/library/stdtypes.html#str.startswith "startswith\(\) method documentation") method; it is pretty much self explanatory;
+- The [split()](http://docs.python.org/library/stdtypes.html#str.split "split\(\) method documentation") method; it will split a string into a list of words eliminating the separator.
 - You have to test this in IDLE or equivalent.
 
 ---
