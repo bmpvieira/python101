@@ -388,8 +388,8 @@ Take special care with:
 -----------------------
 
 - The [splitlines()](http://docs.python.org/library/stdtypes.html#str.endswith "splitlines\(\) method documentation") method; this built-in will split a string into a list where each element is a line of the string;
-- The [startswith()](http://docs.python.org/library/stdtypes.html#str.startswith "startswith\(\) function documentation") function; it is pretty much self explanatory;
-- The [split()](http://docs.python.org/library/stdtypes.html#str.split "split\(\) function documentation") function; it will split a string into a list of words eliminating the separator.
+- The [startswith()](http://docs.python.org/library/stdtypes.html#str.startswith "startswith\(\) method documentation") method; it is pretty much self explanatory;
+- The [split()](http://docs.python.org/library/stdtypes.html#str.split "split\(\) method documentation") method; it will split a string into a list of words eliminating the separator.
 - You have to test this in IDLE or equivalent.
 
 ---
