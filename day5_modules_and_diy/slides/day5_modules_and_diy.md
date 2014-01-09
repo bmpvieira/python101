@@ -292,9 +292,9 @@ Availability: Unix, Windows.
 ```python
 import os
 print os.getcwd()
-print os.list("Scripts")
-print os.list(".")
-print os.list("..")1
+print os.listdir("Scripts")
+print os.listdir(".")
+print os.listdir("..")
 '/home/bruno'<br />['script1.py', 'script2.py']<br />['Documents', 'Music', 'Movies', 'Scripts']<br />['bruno', 'diogo', 'francisco'] #forceoutput
 ```
 
