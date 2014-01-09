@@ -98,7 +98,7 @@ The [sys.argv](http://docs.python.org/library/sys.html#sys.argv "sys.argv docume
 
 * Among many other advanced features, _sys_ contains a very useful method: ***argv***. This method allows aditional arguments to be passed and used when invoking the script:
 
-```python
+```bash
 python my_script.py first_argument second_argument third_argument
  #forceoutput
 ```
