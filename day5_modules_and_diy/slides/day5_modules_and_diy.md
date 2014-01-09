@@ -107,9 +107,7 @@ python my_script.py first_argument second_argument third_argument
 ```python
 import sys
 print str(sys.argv) # Note that the first argument in the list is the name of the script
-"["my_scripts.py","first_argument","second_argument","third_argument"]"
-
- #forceoutput
+"["my_scripts.py","first_argument","second_argument","third_argument"]"#forceoutput
 ```
 
 ---
