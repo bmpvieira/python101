@@ -100,7 +100,6 @@ The [sys.argv](http://docs.python.org/library/sys.html#sys.argv "sys.argv docume
 
 ```bash
 python my_script.py first_argument second_argument third_argument
- #forceoutput
 ```
 
 * After the module has been imported into the script, the aditional arguments are stored in a list, which can be accessed in a simple way:
